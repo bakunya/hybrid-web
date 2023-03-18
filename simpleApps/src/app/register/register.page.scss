@@ -1,0 +1,23 @@
+#container {
+  max-width: 800px;
+  padding: 10px;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.btn-submit {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  display: block;
+  max-width: 200px;
+}
+
+.birth,
+.birth * {
+  background-color: white !important;
+}
