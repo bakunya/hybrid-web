@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Register</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title>Subscribe</ion-card-title>
+        <ion-card-subtitle>Subscribe To Our Mail Letter</ion-card-subtitle>
+      </ion-card-header>
+      <hr class="divider">
+      <ion-card-content>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit, quae nostrum a pariatur incidunt quos possimus. Aperiam doloribus minus, omnis iusto, sint in sed amet consequuntur praesentium molestias autem.
+      </ion-card-content>
+    </ion-card>
+
+    <form action="">
+      <ion-list>
+        <ion-list-header>
+          <ion-label class="title">Register</ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Address</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+      </ion-list>
+      <ion-button class="btn-submit" type="submit">Submit Form</ion-button>
+    </form>
+  </div>
+</ion-content>
