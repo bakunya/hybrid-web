@@ -1,7 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Register
+      <div class="toolbar">
+        <ion-icon size="large" name="basketball-outline"></ion-icon>
+        <span>Register</span>
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -25,29 +28,32 @@
       </ion-card-content>
     </ion-card>
 
-    <form action="">
+    <form (submit)="submission()">
       <ion-list>
         <ion-list-header>
           <ion-label class="title">Register</ion-label>
         </ion-list-header>
         <ion-item>
           <ion-label position="floating">Name</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input [(ngModel)]="user.name" name="name" type="text"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Password</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input [(ngModel)]="user.password" name="password" type="password"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Email</ion-label>
-          <ion-input type="email"></ion-input>
+          <ion-input [(ngModel)]="user.email" name="email" type="email"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Address</ion-label>
-          <ion-textarea></ion-textarea>
+          <ion-textarea [(ngModel)]="user.address" name="address"></ion-textarea>
         </ion-item>
       </ion-list>
-      <ion-button class="btn-submit" type="submit">Submit Form</ion-button>
+      <div class="container-btn">
+        <ion-button color="warning" type="button" (click)="toHome()">Home</ion-button>
+        <ion-button class="btn-submit" type="submit">Submit Form</ion-button>
+      </div>
     </form>
   </div>
 </ion-content>
