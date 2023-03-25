@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  number: number = 0
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  up() {
+    this.number += 1
+  }
+
+  down() {
+    this.number -= 1
   }
 
 }
