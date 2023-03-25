@@ -18,6 +18,7 @@ export class HomePage implements OnInit {
   }
 
   down() {
+    if(this.number < 1) return
     this.number -= 1
   }
 
