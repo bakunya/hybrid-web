@@ -1,7 +1,16 @@
+.toolbar {
+  display: flex !important;
+  align-items: center;
+}
+
+.toolbar > span {
+  margin-left: 15px;
+}
+
 #container {
   max-width: 800px;
   padding: 10px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .title {
@@ -11,10 +20,13 @@
 }
 
 .btn-submit {
-  margin-top: 1.5rem;
-  margin-left: auto;
-  display: block;
   max-width: 200px;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .birth,

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="toolbar">
+        <ion-icon size="large" name="basketball-outline"></ion-icon>
+        <span>Home</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-text color="secondary" class="ion-text-center">
+        <h1 class="ion-2x">{{number}}</h1>
+        <ion-button color="success" (click)="up()" expand="block">Up</ion-button>
+        <ion-button color="warning" (click)="down()" expand="block">Down</ion-button>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
